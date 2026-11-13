@@ -1,0 +1,392 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+
+    Plantilla Tooplate personalizada como hoja de vida de ejemplo
+
+    https://www.tooplate.com/view/2169-hustle-bee
+
+    Free HTML CSS Template
+
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hoja de vida de ejemplo de Mateo Londoño, desarrollador web junior.">
+  <meta name="author" content="Mateo Londoño">
+  <meta name="theme-color" content="#FFBA08">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐝</text></svg>">
+  <title>Hoja de vida | Mateo Londoño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/tooplate-2169-hustle-bee.css' %}">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Mateo Londoño Colorado</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Perfil</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#education">Estudios</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#contact" class="nav-cta">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-blob hero-blob-3"></div>
+      <div class="hero-honeycomb"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge"><span class="status-dot"></span> Perfil profesional</div>
+        <h1 class="hero-name">Hoja de vida<br>
+        <p class="hero-tagline">Desarrollador web junior interesado en crear sitios claros, accesibles y fáciles de usar.</p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn btn-primary">Ver experiencia ↓</a>
+          <a href="#contact" class="btn btn-secondary">Datos de contacto</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-card">
+          <img src="{% static 'img/images/design-work.jpg' %}" alt="Trabajo de diseño">
+        </div>
+        <div class="hero-img-card">
+          <img src="{% static 'img/images/portatil.jpeg' %}" alt="Proyecto de panel">
+        </div>
+        <div class="hero-img-card">
+          <img src="{% static 'img/images/app-design.jpg' %}" alt="Diseño de aplicación">
+        </div>
+        <span class="hero-visual-sticker">Desarrollo web</span>
+      </div>
+    </div>
+    <div class="scroll-hint">desplázate<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo"><img src="{% static 'img/images/teo.jpeg' %}" alt="Imagen de ejemplo para reemplazar por una foto personal"></div>
+          <div class="about-photo-decor"></div>
+          <div class="about-photo-sticker">📷 Foto</div>
+        </div>
+        <div class="about-text reveal reveal-delay-1">
+          <span class="section-label"><span class="dot"></span> Perfil y datos personales</span>
+          <h2 class="section-title">Desarrollador web junior</h2>
+          <p>Soy una persona responsable, curiosa y comprometida con el aprendizaje. Tengo conocimientos básicos de desarrollo web y experiencia de ejemplo creando páginas y aplicaciones sencillas.</p>
+          <p>Me interesa aportar a un equipo de trabajo, resolver problemas con tecnología y seguir fortaleciendo mis habilidades en programación.</p>
+          <dl class="personal-data">
+            <div><dt>Nombre completo</dt><dd>Mateo Londoño Colorado</dd></div>
+            <div><dt>Ciudad</dt><dd>Medellín, Antioquia</dd></div>
+            <div><dt>Teléfono</dt><dd>+57 311 313 8258</dd></div>
+            <div><dt>Correo</dt><dd>teolondocolorado82@gmail.com</dd></div>
+            <div><dt>Perfil</dt><dd>Desarrollador web junior</dd></div>
+            <div><dt>Disponibilidad</dt><dd>Tiempo completo</dd></div>
+          </dl>
+          <div class="about-stats">
+            <div class="stat-item"><span class="stat-number">2</span><span class="stat-label">Años de formación</span></div>
+            <div class="stat-item"><span class="stat-number">2</span><span class="stat-label">Proyectos de ejemplo</span></div>
+            <div class="stat-item"><span class="stat-number">B1</span><span class="stat-label">Inglés</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS — BENTO -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="skills-header reveal">
+        <span class="section-label"><span class="dot"></span> Habilidades y herramientas</span>
+        <h2 class="section-title">Conocimientos y competencias.</h2>
+        <p class="section-desc">Habilidades técnicas y personales de ejemplo. Ajusta los niveles para que reflejen tu experiencia real.</p>
+      </div>
+      <div class="skills-bento">
+        <div class="skill-bento-card span-2 reveal-scale">
+          <img class="skill-bento-img" src="{% static 'img/images/ht.jpeg' %}" alt="Espacio de diseño">
+          <div class="skill-bento-overlay">
+            <span class="skill-bento-name">HTML y CSS</span>
+            <span class="skill-bento-desc">Estructura de páginas, estilos y diseños adaptables a dispositivos.</span>
+          </div>
+          <span class="skill-bento-level">Intermedio</span>
+        </div>
+        <div class="skill-bento-card reveal-scale reveal-delay-1">
+          <img class="skill-bento-img" src="{% static 'img/images/java.jpeg' %}" alt="Código en pantalla">
+          <div class="skill-bento-overlay">
+            <span class="skill-bento-name">JavaScript</span>
+            <span class="skill-bento-desc">Variables, funciones, eventos y manipulación básica del DOM.</span>
+          </div>
+          <span class="skill-bento-level">Básico</span>
+        </div>
+        <div class="skill-bento-card reveal-scale reveal-delay-2">
+          <img class="skill-bento-img" src="{% static 'img/images/django.jpeg' %}" alt="JavaScript">
+          <div class="skill-bento-overlay">
+            <span class="skill-bento-name">Python y Django</span>
+            <span class="skill-bento-desc">Fundamentos de Python y creación de páginas con Django.</span>
+          </div>
+          <span class="skill-bento-level">Intermedio</span>
+        </div>
+        <div class="skill-bento-card tall reveal-scale">
+          <img class="skill-bento-img" src="{% static 'img/images/datos.jpeg' %}" alt="Desarrollo con React">
+          <div class="skill-bento-overlay">
+            <span class="skill-bento-name">Bases de datos</span>
+            <span class="skill-bento-desc">Consultas y operaciones básicas con SQL y SQLite.</span>
+          </div>
+          <span class="skill-bento-level">Intermedio</span>
+        </div>
+        <div class="skill-bento-card reveal-scale reveal-delay-1">
+          <img class="skill-bento-img" src="{% static 'img/images/github.jpeg' %}" alt="Tailwind CSS">
+          <div class="skill-bento-overlay">
+            <span class="skill-bento-name">GitHub</span>
+            <span class="skill-bento-desc">Control de versiones, commits y trabajo con repositorios.</span>
+          </div>
+          <span class="skill-bento-level">Básico</span>
+        </div>
+        <div class="skill-bento-card reveal-scale reveal-delay-2">
+          <img class="skill-bento-img" src="{% static 'img/images/equipo.jpeg' %}" alt="Código backend">
+          <div class="skill-bento-overlay">
+            <span class="skill-bento-name">Trabajo en equipo</span>
+            <span class="skill-bento-desc">Comunicación respetuosa, colaboración y disposición para aprender.</span>
+          </div>
+          <span class="skill-bento-level">Fortaleza</span>
+        </div>
+        <div class="skill-bento-card span-2 reveal-scale reveal-delay-1">
+          <img class="skill-bento-img" src="{% static 'img/images/ofimatica.jpeg' %}" alt="Temas de WordPress">
+          <div class="skill-bento-overlay">
+            <span class="skill-bento-name">Ofimática</span>
+            <span class="skill-bento-desc">Manejo de documentos, hojas de cálculo y presentaciones.</span>
+          </div>
+          <span class="skill-bento-level">Intermedio</span>
+        </div>
+        <div class="skill-bento-card reveal-scale reveal-delay-2">
+          <img class="skill-bento-img" src="{% static 'img/images/usa.jpeg' %}" alt="Control de versiones">
+          <div class="skill-bento-overlay">
+            <span class="skill-bento-name">Inglés</span>
+            <span class="skill-bento-desc">Comprensión de textos y comunicación básica.</span>
+          </div>
+          <span class="skill-bento-level">Habilidad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS — DIAGONAL SPLIT -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label"><span class="dot"></span> Proyectos y logros</span>
+        <h2 class="section-title">Proyectos personales y académicos.</h2>
+        <p class="section-desc">Ejemplos de trabajos que puedes adaptar para mostrar tus proyectos, responsabilidades y resultados.</p>
+      </div>
+
+      <div class="projects-list">
+        <!-- Card 1 — image left, info right -->
+        <div class="project-card reveal">
+          <div class="project-card-img">
+            <img src="{% static 'img/images/piemon.jpeg' %}" alt="Panel de control de acceso y pagos de la unidad residencial Piemonte">
+          </div>
+          <div class="project-info">
+            <span class="project-number">01</span>
+            <span class="project-tag">Proyecto académico · 2026</span>
+            <h3 class="project-title">Sitio web para control de acceso y pagos de la unidad residencial Piemonte</h3>
+            <p class="project-desc">Propuesta de sitio web para gestionar el registro de visitantes y consultar pagos de administración de la unidad residencial Piemonte.</p>
+            <div class="project-stack">
+              <span class="project-stack-pill">HTML</span>
+              <span class="project-stack-pill">CSS</span>
+              <span class="project-stack-pill">JavaScript</span>
+              <span class="project-stack-pill">Django</span>
+              <span class="project-stack-pill">Python</span>
+
+            </div>
+            <span class="project-link">Accesos · Pagos · Residentes</span>
+          </div>
+        </div>
+
+        <!-- Card 2 — image right, info left (auto-reversed) -->
+        <div class="project-card reveal">
+          <div class="project-card-img">
+            <img src="{% static 'img/images/calenda.jpeg' %}" alt="Planificación de actividades para un calendario interactivo">
+          </div>
+          <div class="project-info">
+            <span class="project-number">02</span>
+            <span class="project-tag">Proyecto personal · 2026</span>
+            <h3 class="project-title">Calendario interactivo</h3>
+            <p class="project-desc">Calendario web para consultar fechas y organizar actividades mediante una interfaz interactiva y adaptable a distintos dispositivos.</p>
+            <div class="project-stack">
+              <span class="project-stack-pill">HTML</span>
+              <span class="project-stack-pill">CSS</span>
+              <span class="project-stack-pill">JavaScript</span>
+              <span class="project-stack-pill">Python</span>
+              <span class="project-stack-pill">Django</span>
+            </div>
+            <span class="project-link">Fechas · Actividades · Organización</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION — VISUAL CARDS -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label"><span class="dot"></span> Estudios realizados</span>
+        <h2 class="section-title">Formación académica y cursos.</h2>
+      </div>
+      <div class="edu-cards">
+        <div class="edu-card reveal">
+          <div class="edu-card-img">
+            <img src="{% static 'img/images/bachiller.jpeg' %}" alt="Campus">
+            <span class="edu-card-year">2019 – 2024</span>
+          </div>
+          <div class="edu-card-body">
+            <div class="edu-card-icon"><img src="{% static 'img/images/icon-3.jpg' %}" alt="icono"></div>
+            <h3 class="edu-card-title">Bachiller académico</h3>
+            <p class="edu-card-place">Institución Educativa Concejo Municipal de La Estrella</p>
+            <p class="edu-card-desc">La etapa del colegio es un periodo en el que aprendemos conocimientos, valores y habilidades, hacemos amigos y desarrollamos nuestra personalidad.</p>
+          </div>
+        </div>
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-card-img">
+            <img src="{% static 'img/images/python2.jpeg' %}" alt="Aprendizaje en línea">
+            <span class="edu-card-year">2025</span>
+          </div>
+          <div class="edu-card-body">
+            <div class="edu-card-icon"><img src="{% static 'img/images/icon-2.jpg' %}" alt="icono"></div>
+            <h3 class="edu-card-title">Curso de desarrollo web con Python</h3>
+            <p class="edu-card-place">BIG SCHOOL</p>
+            <p class="edu-card-desc">Introducción a Python, Django, creación de vistas y organización de rutas para aplicaciones web.</p>
+          </div>
+        </div>
+        <div class="edu-card reveal reveal-delay-2">
+          <div class="edu-card-img">
+            <img src="{% static 'img/images/coding-bootcamp.jpg' %}" alt="Bootcamp de programación">
+            <span class="edu-card-year">2026</span>
+          </div>
+          <div class="edu-card-body">
+            <div class="edu-card-icon"><img src="{% static 'img/images/icon.jpg' %}" alt="icono"></div>
+            <h3 class="edu-card-title">Curso de iniciación al desarrollo con IA</h3>
+            <p class="edu-card-place">BIG SCHOOL</p>
+            <p class="edu-card-desc">Introducción a los conceptos de inteligencia artificial y su aplicación en el desarrollo de software.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE — CARDS WITH IMAGES + MARQUEE -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label"><span class="dot"></span> Experiencia laboral</span>
+        <h2 class="section-title">Experiencia y responsabilidades.</h2>
+      </div>
+      <div class="exp-marquee">
+        <div class="exp-marquee-track">
+          <span class="exp-marquee-item">Responsabilidad</span><span class="exp-marquee-item">Trabajo en equipo</span>
+          <span class="exp-marquee-item">Comunicación</span><span class="exp-marquee-item">Organización</span>
+          <span class="exp-marquee-item">Puntualidad</span><span class="exp-marquee-item">Aprendizaje continuo</span>
+          <span class="exp-marquee-item">Atención al detalle</span><span class="exp-marquee-item">Resolución de problemas</span>
+          <span class="exp-marquee-item">Responsabilidad</span><span class="exp-marquee-item">Trabajo en equipo</span>
+          <span class="exp-marquee-item">Comunicación</span><span class="exp-marquee-item">Organización</span>
+          <span class="exp-marquee-item">Puntualidad</span><span class="exp-marquee-item">Aprendizaje continuo</span>
+          <span class="exp-marquee-item">Atención al detalle</span><span class="exp-marquee-item">Resolución de problemas</span>
+        </div>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-card reveal reveal-delay-1">
+          <div class="exp-card-img">
+            <img src="{% static 'img/images/soporte.jpeg' %}" alt="Agencia digital">
+            <span class="exp-card-duration">1 año</span>
+          </div>
+          <div class="exp-card-body">
+            <span class="exp-card-period">2025</span>
+            <h3 class="exp-card-role">Soporte tecnológico</h3>
+            <p class="exp-card-company">Universidad de Antioquia</p>
+            <p class="exp-card-desc">Mantener actualizada la documentación de procesos internos.</p>
+            <div class="exp-tags">
+              <span class="exp-tag">Soporte</span><span class="exp-tag">Documentación</span>
+              <span class="exp-tag">Servicio al cliente</span>
+            </div>
+          </div>
+        </div>
+        <div class="exp-card reveal reveal-delay-2">
+          <div class="exp-card-img">
+            <img src="{% static 'img/images/logistica.jpeg' %}" alt="Estudio creativo">
+            <span class="exp-card-duration">1 año</span>
+          </div>
+          <div class="exp-card-body">
+            <span class="exp-card-period">2024</span>
+            <h3 class="exp-card-role">Auxiliar logístico</h3>
+            <p class="exp-card-company">CC VIVA ENVIGADO</p>
+            <p class="exp-card-desc">Organicé procesos logísticos y apoyé en la gestión de inventarios.</p>
+            <div class="exp-tags">
+              <span class="exp-tag">Organización</span><span class="exp-tag">Atención al cliente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label"><span class="dot"></span> Datos de contacto</span>
+        <h2 class="section-title">Información para contactarme.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-methods reveal reveal-delay-1">
+          <a href="mailto:mateo.londono.ejemplo@example.com" class="contact-method">
+            <div class="contact-method-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+            <div><div class="contact-method-label">Correo electrónico</div><div class="contact-method-value">teolondocolorado82@gmail.com</div></div>
+          </a>
+          <a href="tel:+573000000000" class="contact-method">
+            <div class="contact-method-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.56 3.58.56a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.19 2.46.56 3.58a1 1 0 01-.25 1.01l-2.19 2.2z"/></svg></div>
+            <div><div class="contact-method-label">Teléfono</div><div class="contact-method-value">+57 311 313 8258</div></div>
+          </a>
+          <div class="contact-method">
+            <div class="contact-method-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg></div>
+            <div><div class="contact-method-label">Ubicación</div><div class="contact-method-value">Medellín, Antioquia, Colombia</div></div>
+          </div>
+        </div>
+        <div class="contact-note reveal reveal-delay-2">
+          <h3>Referencias</h3>
+          <p>Disponibles a solicitud.</p>
+          <h3>Documentos</h3>
+          <p>Certificados académicos y laborales disponibles para compartir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="#" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg></a>
+        <a href="#" aria-label="Dribbble"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.375 0 0 5.375 0 12s5.375 12 12 12 12-5.375 12-12S18.625 0 12 0zm7.938 5.563a10.18 10.18 0 012.25 6.375c-.328-.063-3.625-.734-6.938-.313-.063-.156-.125-.281-.188-.438-.187-.437-.375-.875-.593-1.312 3.688-1.5 5.344-3.656 5.469-3.813z"/></svg></a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+      <p class="footer-text">Hoja de vida - Mateo Londoño Colorado · © 2026 · Plantilla base de <a href="https://www.tooplate.com" target="_blank" rel="noopener" style="color: var(--honey); text-decoration: none;">Tooplate</a>.</p>
+    </div>
+  </footer>
+    <script src="{% static 'js/tooplate-2169-hustle-bee.js' %}"></script>
+</body>
+</html>
